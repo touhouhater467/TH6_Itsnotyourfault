@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hand Gesture 3D Cube</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #111; }
+        #video-container { position: absolute; bottom: 10px; right: 10px; width: 200px; border: 2px solid white; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <video id="webcam" autoplay playsinline style="transform: scaleX(-1); visibility: hidden; width: 0; height: 0;"></video>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
